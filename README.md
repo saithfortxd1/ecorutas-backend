@@ -27,7 +27,7 @@ source venv/bin/activate
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass  # Ejecutar si Windows bloquea scripts
 .\venv\Scripts\Activate.ps1
 
-## Instalar dependencias
+# Instalar dependencias
 pip install -r requirements.txt
 
 # Ejecutar migraciones
@@ -49,6 +49,7 @@ El servidor estará disponible en `http://localhost:8000/`
 - `GET/POST /api/catalogo/disponibilidades/`
 
 ## Estructura del Proyecto
+
 
 ```
 ecorutas-backend/
