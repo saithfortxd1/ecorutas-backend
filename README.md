@@ -33,36 +33,28 @@ pip install -r requirements.txt
 # Ejecutar migraciones
 python manage.py migrate
 
-# Ejecutar server
+# Ejecutar servidor
 python manage.py runserver
 
-El servidor estará disponible en `http://localhost:8000/`
+# Endpoints Principales
+GET/POST /api/catalogo/categorias/
+GET/POST /api/catalogo/experiencias/
+GET/POST /api/catalogo/disponibilidades/
 
-## Documentación API
-
-- Swagger UI: `http://localhost:8000/docs/`
-
-## Endpoints Principales
-
-- `GET/POST /api/catalogo/categorias/`
-- `GET/POST /api/catalogo/experiencias/`
-- `GET/POST /api/catalogo/disponibilidades/`
-
-## Estructura del Proyecto
-
-
-```
+# Estructura del Proyecto
 ecorutas-backend/
-├── core/                 # Configuración principal de Django
-├── catalogo/             # App del catálogo de experiencias
-│   ├── models.py         # Modelos (Categoria, Experiencia, etc.)
-│   ├── views.py          # ViewSets CRUD
-│   ├── serializers.py    # Serializers DRF
-│   └── urls.py           # Rutas de la API
+├── core/                  # Configuración principal de Django
+├── catalogo/              # App del catálogo de experiencias
+│   ├── models.py          # Modelos (Categoria, Experiencia, etc.)
+│   ├── views.py           # ViewSets CRUD
+│   ├── serializers.py     # Serializers DRF
+│   └── urls.py            # Rutas de la API
 ├── manage.py
-└── requirements.txt
-```
+├── requirements.txt
+└── .gitignore
 
-## Licencia
+#Licencia
+Proyecto privado universitario - EcoRutas
 
-Proyecto privado - EcoRutas
+#Documentación API
+Swagger UI: http://localhost:8000/docs/
