@@ -13,7 +13,7 @@ Backend API para la aplicación EcoRutas, construida con Django y Django REST Fr
 
 ```bash
 # Clonar el repositorio
-git clone <url-del-repositorio>
+git clone <https://github.com/saithfortxd1/ecorutas-backend>
 cd ecorutas-backend
 
 # Crear entorno virtual
