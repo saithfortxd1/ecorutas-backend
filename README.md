@@ -53,8 +53,8 @@ ecorutas-backend/
 ├── requirements.txt
 └── .gitignore
 
-#Licencia
-Proyecto privado universitario - EcoRutas
-
 #Documentación API
 Swagger UI: http://localhost:8000/docs/
+
+#Licencia
+Proyecto privado universitario - EcoRutas
