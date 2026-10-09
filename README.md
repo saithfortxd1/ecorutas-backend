@@ -4,7 +4,7 @@ Backend API para la aplicación EcoRutas, construida con Django y Django REST Fr
 
 ## Tecnologías
 
-- Python 3.x
+- Python 3.12 (Recomendado)
 - Django 6.1.2
 - Django REST Framework 3.18.3
 - drf-yasg (Documentación Swagger)
@@ -13,33 +13,28 @@ Backend API para la aplicación EcoRutas, construida con Django y Django REST Fr
 
 ```bash
 # Clonar el repositorio
-git clone <https://github.com/saithfortxd1/ecorutas-backend>
+git clone https://github.com/saithfortxd1/ecorutas-backend.git
 cd ecorutas-backend
 
 # Crear entorno virtual
-python -m venv venv
-source venv/bin/activate  # En Windows: venv\Scripts\activate
+py -3.12 -m venv venv   # O bien: python -m venv venv
 
-# Instalar dependencias
+# Activar entorno virtual
+# En macOS/Linux:
+source venv/bin/activate
+
+# En Windows (PowerShell):
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass  # Ejecutar si Windows bloquea scripts
+.\venv\Scripts\Activate.ps1
+
+## Instalar dependencias
 pip install -r requirements.txt
-```
 
-## Configuración
+# Ejecutar migraciones
+python manage.py migrate
 
-1. Ejecuta las migraciones:
-   ```bash
-   python manage.py migrate
-   ```
-2. Crea un superusuario (opcional):
-   ```bash
-   python manage.py createsuperuser
-   ```
-
-## Ejecución
-
-```bash
+# Ejecutar server
 python manage.py runserver
-```
 
 El servidor estará disponible en `http://localhost:8000/`
 
